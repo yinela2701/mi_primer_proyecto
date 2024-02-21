@@ -10,22 +10,29 @@
 </head>
 <body>
 
-    <h1>Yinela Primero Pérez</h1>
     <p><a href="#SOBREMI">SOBRE MI</a><br>
     <a href="#HOBBIES">HOBBIES</a> <br>
     <a href="#VIDEO">VIDEO</a> <br>
     <a href="#AUDIO">AUDIO</a> <br>
     <a href="#FORMULARIO">FORMULARIO</a> <br>
-    <a href="#CONTACTO">CONTACTO<br>
+    <a href="#CONTACTO">CONTACTO<br></a>
     </p>
 
-    <img src = "/Imagenes/Perfil.jpg" width="100px" height="150px" alt="Foto Perfil"> </img>
     <a name="SOBREMI"> </a>
-    <p>Aquí va mi humilde descripción sobre mi, mucho gusto</p>
-    <p>Lo que me gusta hacer en mis pocos tiempos libres: </p>
+    
+    <h1>Yinela Primero Pérez</h1>
+
+    <img src = "/Imagenes/Perfil.jpg" width="150px" height="200px" alt="Foto Perfil"> </img>
+
+    <p>Soy estudiante de ingeniería multimedia, actualmente cursando mi sexto semestre.
+        A lo largo de mi carrera, he desarrollado una pasión por la <strong>programación y la creación de videojuegos, centrándome especialmente en la realidad aumentada </strong>. 
+        Disfruto de las pequeñas cosas de la vida, como contemplar un hermoso atardecer y degustar un buen café. 
+        Mi <em>disciplina y responsabilidad son características que valoro</em>, y siempre <mark>busco estar en constante aprendizaje</mark>. ¡Hasta pronto!</p>
     
     <div>
     <a name="HOBBIES"> </a>
+
+    <p>Lo que me gusta hacer en mis pocos tiempos libres: </p>
     <ul>
         <li>Pintar sobre lienzo y cerámica</li>
         <li>Programar y aprender sus lenguajes </li>
@@ -40,6 +47,8 @@
 
     <a name="VIDEO"> </a>
     <div>
+    <h4>Uno de mis proyectos de RV</h4>
+
     <iframe width="560" height="315" name = "CONTACTO"
     src="https://www.youtube.com/embed/mV9ILNSe1pE?si=bDi3V5Y_TQwGDuBT" title="YouTube video player" frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
@@ -48,9 +57,9 @@
 
     <a name="AUDIO"> </a>
     <div>
+
     <audio controls>
-        <source src="https://pixabay.com/es/music/pulsos-perfect-beauty-191271/" type="audio/mp3" />
-        <source src="horse.mp3" type="audio/mpeg" />
+        <source src="/Audio/audio.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -65,9 +74,9 @@
           Nombre:
           <input type="text "placeholder="Sara Bermudez" name="username" required /> <br><br>
           Email: 
-          <input type = "email" placeholder="example@gmail.com" name="email" required /><br><br>
+          <input type = "email" placeholder="example@gmail.com" name="email"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required /><br><br>
           <textarea name="text" cols="32" rows="10" placeholder="Mi motivo de consulta a este perfil es..."></textarea> <br><br>
-          <input type="reset" value="Enviar formulario" />
+          <input type="reset" value="Enviar Formulario" />
         
         </fieldset>
     </form>
